@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name = 'SwifterSwift-Stripped'
-  s.version = '5.3.0'
+  s.version = '5.4.0'
   s.summary = 'A handy collection of more than 500 native Swift extensions to boost your productivity. Which does not murder your IB'
   s.description = <<-DESC
-  SwifterSwift is a collection of over 500 native Swift extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS and watchOS. Without the ibinspectables
+  SwifterSwift is a collection of over 500 native Swift extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS. Without the ibinspectables
                    DESC
 
   s.homepage = 'hhttps://github.com/guustmc/SwifterSwift'
@@ -14,9 +14,6 @@ Pod::Spec.new do |s|
   s.documentation_url = 'http://swifterswift.com/docs'
 
   s.ios.deployment_target = '10.0'
-  s.osx.deployment_target = '10.10'
-  s.tvos.deployment_target = '9.0'
-  s.watchos.deployment_target = '2.0'
 
   s.swift_version = '5.1'
   s.requires_arc = true
