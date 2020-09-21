@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:SwifterSwift.xcodeproj">
+      location = "container:/Users/guus.mulder/SwifterSwiftStripped/SwifterSwift-Stripped.xcodeproj">
    </FileRef>
 </Workspace>

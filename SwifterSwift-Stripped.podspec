@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   SwifterSwift is a collection of over 500 native Swift extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS and watchOS. Without the ibinspectables
                    DESC
 
-  s.homepage = 'https://github.com/SwifterSwift/SwifterSwift'
+  s.homepage = 'hhttps://github.com/guustmc/SwifterSwift'
   s.license = { type: 'MIT', file: 'LICENSE' }
   s.authors = { 'Omar Albeik' => 'omaralbeik@gmail.com' }
   s.social_media_url = 'http://twitter.com/omaralbeik'
@@ -20,76 +20,76 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.1'
   s.requires_arc = true
-  s.source = { git: 'https://github.com/guustmc/SwifterSwift', tag: s.version.to_s }
-  s.source_files = 'Sources/SwifterSwift/**/*.swift'
+  s.source = { git: 'https://github.com/guustmc/SwifterSwift.git', tag: s.version.to_s }
+  s.source_files = 'Sources/SwifterSwift-Stripped/**/*.swift'
 
   # SwiftStdlib Extensions
   s.subspec 'SwiftStdlib' do |sp|
-    sp.source_files  = 'Sources/SwifterSwift/Shared/*.swift', 'Sources/SwifterSwift/SwiftStdlib/*.swift'
+    sp.source_files  = 'Sources/SwifterSwift-Stripped/Shared/*.swift', 'Sources/SwifterSwift-Stripped/SwiftStdlib/*.swift'
   end
 
   # Foundation Extensions
   s.subspec 'Foundation' do |sp|
-    sp.source_files  = 'Sources/SwifterSwift/Shared/*.swift', 'Sources/SwifterSwift/Foundation/*.swift'
+    sp.source_files  = 'Sources/SwifterSwift-Stripped/Shared/*.swift', 'Sources/SwifterSwift-Stripped/Foundation/*.swift'
   end
 
   # UIKit Extensions
   s.subspec 'UIKit' do |sp|
-    sp.source_files  = 'Sources/SwifterSwift/Shared/*.swift', 'Sources/SwifterSwift/UIKit/*.swift'
+    sp.source_files  = 'Sources/SwifterSwift-Stripped/Shared/*.swift', 'Sources/SwifterSwift-Stripped/UIKit/*.swift'
   end
 
   # AppKit Extensions
   s.subspec 'AppKit' do |sp|
-    sp.source_files  = 'Sources/SwifterSwift/Shared/*.swift', 'Sources/SwifterSwift/AppKit/*.swift'
+    sp.source_files  = 'Sources/SwifterSwift-Stripped/Shared/*.swift', 'Sources/SwifterSwift-Stripped/AppKit/*.swift'
   end
 
   # CoreGraphics Extensions
   s.subspec 'CoreGraphics' do |sp|
-    sp.source_files  = 'Sources/SwifterSwift/CoreGraphics/*.swift'
+    sp.source_files  = 'Sources/SwifterSwift-Stripped/CoreGraphics/*.swift'
   end
 
   # CoreLocation Extensions
   s.subspec 'CoreLocation' do |sp|
-    sp.source_files  = 'Sources/SwifterSwift/CoreLocation/*.swift'
+    sp.source_files  = 'Sources/SwifterSwift-Stripped/CoreLocation/*.swift'
   end
 
   # CoreAnimation Extensions
   s.subspec 'CoreAnimation' do |sp|
-    sp.source_files  = 'Sources/SwifterSwift/Shared/*.swift', 'Sources/SwifterSwift/CoreAnimation/*.swift'
+    sp.source_files  = 'Sources/SwifterSwift-Stripped/Shared/*.swift', 'Sources/SwifterSwift-Stripped/CoreAnimation/*.swift'
   end
 
   # MapKit Extensions
   s.subspec 'MapKit' do |sp|
-    sp.source_files = 'Sources/SwifterSwift/Shared/*.swift', 'Sources/SwifterSwift/MapKit/*.swift'
+    sp.source_files = 'Sources/SwifterSwift-Stripped/Shared/*.swift', 'Sources/SwifterSwift-Stripped/MapKit/*.swift'
   end
 
   # SpriteKit Extensions
   s.subspec 'SpriteKit' do |sp|
-    sp.source_files = 'Sources/SwifterSwift/SpriteKit/*.swift'
+    sp.source_files = 'Sources/SwifterSwift-Stripped/SpriteKit/*.swift'
   end
 
   s.subspec 'SceneKit' do |sp|
-    sp.source_files  =  'Sources/SwifterSwift/Shared/*.swift', 'Sources/SwifterSwift/SceneKit/*.swift'
+    sp.source_files  =  'Sources/SwifterSwift-Stripped/Shared/*.swift', 'Sources/SwifterSwift-Stripped/SceneKit/*.swift'
   end
 
   # StoreKit Extensions
   s.subspec 'StoreKit' do |sp|
-    sp.source_files = 'Sources/SwifterSwift/StoreKit/*.swift'
+    sp.source_files = 'Sources/SwifterSwift-Stripped/StoreKit/*.swift'
   end
 
   # Dispatch Extensions
   s.subspec 'Dispatch' do |sp|
-    sp.source_files = 'Sources/SwifterSwift/Dispatch/*.swift'
+    sp.source_files = 'Sources/SwifterSwift-Stripped/Dispatch/*.swift'
   end
 
   # WebKit Extensions
   s.subspec 'WebKit' do |sp|
-    sp.source_files = 'Sources/SwifterSwift/WebKit/*.swift'
+    sp.source_files = 'Sources/SwifterSwift-Stripped/WebKit/*.swift'
   end
 
   # HealthKit Extensions
   s.subspec 'HealthKit' do |sp|
-    sp.source_files = 'Sources/SwifterSwift/HealthKit/*.swift'
+    sp.source_files = 'Sources/SwifterSwift-Stripped/HealthKit/*.swift'
   end
 
 end
