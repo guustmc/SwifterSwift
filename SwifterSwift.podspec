@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
-  s.name = 'SwifterSwift'
+  s.name = 'SwifterSwift-Stripped'
   s.version = '5.2.0'
-  s.summary = 'A handy collection of more than 500 native Swift extensions to boost your productivity.'
+  s.summary = 'A handy collection of more than 500 native Swift extensions to boost your productivity. Which does not murder your IB'
   s.description = <<-DESC
-  SwifterSwift is a collection of over 500 native Swift extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS and watchOS.
+  SwifterSwift is a collection of over 500 native Swift extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS and watchOS. Without the ibinspectables
                    DESC
 
   s.homepage = 'https://github.com/SwifterSwift/SwifterSwift'
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.1'
   s.requires_arc = true
-  s.source = { git: 'https://github.com/SwifterSwift/SwifterSwift.git', tag: s.version.to_s }
+  s.source = { git: 'https://github.com/guustmc/SwifterSwift', tag: s.version.to_s }
   s.source_files = 'Sources/SwifterSwift/**/*.swift'
 
   # SwiftStdlib Extensions

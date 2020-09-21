@@ -26,37 +26,6 @@ public extension UITextField {
 // MARK: - Properties
 
 public extension UITextField {
-    /// SwifterSwift: Set textField for common text types.
-    var textType: TextType {
-        get {
-            if keyboardType == .emailAddress {
-                return .emailAddress
-            } else if isSecureTextEntry {
-                return .password
-            }
-            return .generic
-        }
-        set {
-            switch newValue {
-            case .emailAddress:
-                keyboardType = .emailAddress
-                autocorrectionType = .no
-                autocapitalizationType = .none
-                isSecureTextEntry = false
-                placeholder = "Email Address"
-
-            case .password:
-                keyboardType = .asciiCapable
-                autocorrectionType = .no
-                autocapitalizationType = .none
-                isSecureTextEntry = true
-                placeholder = "Password"
-
-            case .generic:
-                isSecureTextEntry = false
-            }
-        }
-    }
 
     /// SwifterSwift: Check if text field is empty.
     var isEmpty: Bool {
@@ -81,32 +50,6 @@ public extension UITextField {
         return text!.range(of: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}",
                            options: String.CompareOptions.regularExpression,
                            range: nil, locale: nil) != nil
-    }
-
-    /// SwifterSwift: Left view tint color.
-    @IBInspectable var leftViewTintColor: UIColor? {
-        get {
-            guard let iconView = leftView as? UIImageView else { return nil }
-            return iconView.tintColor
-        }
-        set {
-            guard let iconView = leftView as? UIImageView else { return }
-            iconView.image = iconView.image?.withRenderingMode(.alwaysTemplate)
-            iconView.tintColor = newValue
-        }
-    }
-
-    /// SwifterSwift: Right view tint color.
-    @IBInspectable var rightViewTintColor: UIColor? {
-        get {
-            guard let iconView = rightView as? UIImageView else { return nil }
-            return iconView.tintColor
-        }
-        set {
-            guard let iconView = rightView as? UIImageView else { return }
-            iconView.image = iconView.image?.withRenderingMode(.alwaysTemplate)
-            iconView.tintColor = newValue
-        }
     }
 }
 
