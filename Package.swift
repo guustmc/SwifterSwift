@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwifterSwift",
+    name: "SwifterSwift-Stripped",
     platforms: [
         .iOS(.v10),
         .tvOS(.v9),
@@ -12,10 +12,10 @@ let package = Package(
         .macOS(.v10_10)
     ],
     products: [
-        .library(name: "SwifterSwift", targets: ["SwifterSwift"])
+        .library(name: "SwifterSwift-Stripped", targets: ["SwifterSwift-Stripped"])
     ],
     dependencies: [],
     targets: [
-        .target(name: "SwifterSwift", dependencies: []),
-        .testTarget(name: "SwifterSwiftTests", dependencies: ["SwifterSwift"], path: "Tests")
+        .target(name: "SwifterSwift-Stripped", dependencies: []),
+        .testTarget(name: "SwifterSwift-StrippedTests", dependencies: ["SwifterSwift-Stripped"], path: "Tests")
     ])
